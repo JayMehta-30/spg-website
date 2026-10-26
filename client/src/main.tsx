@@ -48,4 +48,16 @@ function Admin(){const [logged,setLogged]=useState(false);const [password,setPas
 }
 function App(){const [data,setData]=useState<Data|null>(null);const [error,setError]=useState('');const [route,setRoute]=useState(window.location.pathname);const go=(path:string)=>{history.pushState({},'',path);setRoute(path);window.scrollTo({top:0,behavior:'instant'})};useEffect(()=>{const pop=()=>setRoute(window.location.pathname);window.addEventListener('popstate',pop);return()=>window.removeEventListener('popstate',pop)},[]);useEffect(()=>{if(route.startsWith('/admin'))return;api('/public').then(setData).catch(e=>setError(e.message))},[route]);if(route.startsWith('/admin'))return <Admin/>;if(error)return <div className="load-state">Unable to load SPG at the moment. {error}</div>;if(!data)return <div className="load-state">Loading SPG…</div>;const {site}=data;let body:React.ReactNode;if(route==='/')body=<Home data={data} go={go}/>;else if(route==='/stays')body=<Stays data={data} go={go}/>;else if(route.startsWith('/stays/')){const p=data.properties.find(x=>'/stays/'+x.slug===route);body=p?<Details key={p.id} site={site} p={p} go={go}/>:<main className="page-main container"><h1>Property not found</h1><button className="btn btn-dark" onClick={()=>go('/stays')}>Browse stays</button></main>}else if(route==='/wellness')body=<Wellness site={site}/>;else if(route==='/about')body=<About site={site}/>;else body=<main className="page-main container"><h1>Page not found</h1><button className="btn btn-dark" onClick={()=>go('/')}>Back home</button></main>;return <SmoothScroll route={route}><NoiseOverlay/><CursorGlow/><Header site={site} go={go}/>{body}<Footer site={site} go={go}/></SmoothScroll>}
 
-createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>);
+const container = document.getElementById('root');
+if (container) {
+  const rootKey = '__spg_root__';
+  const win = window as unknown as Record<string, ReturnType<typeof createRoot>>;
+  if (!win[rootKey]) {
+    win[rootKey] = createRoot(container);
+  }
+  win[rootKey].render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
