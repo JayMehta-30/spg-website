@@ -1,0 +1,34 @@
+{
+  "site": {
+    "brand": "SPG",
+    "eyebrow": "FLEXIBLE STAYS · KANDIVALI WEST, MUMBAI",
+    "headline": "Somewhere to arrive. Somewhere to belong.",
+    "subheading": "A more personal way to find your place in Mumbai. Explore comfortable spaces, flexible stays, and a thoughtful hosting experience.",
+    "introTitle": "The comfort of a place that feels like yours.",
+    "introText": "From a short visit to a longer chapter, SPG makes it easy to discover accommodation and speak directly with your host. Every stay is discussed individually, with clarity and care.",
+    "whatsapp": "",
+    "phone": "",
+    "email": "",
+    "whatsappGreeting": "Hello, I'm interested in an SPG apartment in Kandivali West. Could you please share the stay details and next steps?",
+    "locationLabel": "Kandivali West, Mumbai",
+    "wellnessTitle": "Make space for wellbeing.",
+    "wellnessText": "Discover optional yoga and wellness experiences through YogaTopics. These services are separate from your accommodation and subject to availability.",
+    "wellnessUrl": "https://yogatopics.com/",
+    "heroImage": "/images/demo-living.jpg",
+    "heroImageAlt": "Warm, sunlit living area overlooking Mumbai cityscape"
+  },
+  "properties": [
+    {
+      "id":"apartment-01","slug":"kandivali-west-apartment","name":"The Kandivali Residence","subtitle":"A welcoming private apartment in Mumbai","location":"Kandivali West, Mumbai","description":"DEMO CONTENT: A calm, furnished base for your time in Mumbai. Final property description and exact amenities will be added after the owner confirms them.",
+      "rateLabel":"Rates shared on enquiry","rateNote":"Sample wording. Replace with your confirmed rate or leave as enquiry-based pricing.",
+      "stayOptions":"Stay duration subject to discussion","occupancyLabel":"For eligible couples; occupancy subject to confirmation","amenities":["Furnishings: to be confirmed","Kitchen facilities: to be confirmed","Wi-Fi: to be confirmed","Parking: to be confirmed"],
+      "houseRules":"Final house rules will be shared and confirmed by the owner before any stay is agreed.",
+      "eligibility":"Accommodation is currently offered for couples only and is not available for single-person rentals. All requests are subject to suitability, owner review and applicable policies.",
+      "images":["/images/demo-living.jpg","/images/demo-bedroom.jpg","/images/demo-kitchen.jpg","/images/demo-balcony.jpg"],
+      "video":"/videos/tour.webm",
+      "published":true,"sortOrder":1
+    },
+    {"id":"apartment-02","slug":"future-property-02","name":"Upcoming apartment 02","subtitle":"In preparation","location":"Mumbai","description":"Internal placeholder; do not publish before owner approval.","rateLabel":"","rateNote":"","stayOptions":"","occupancyLabel":"","amenities":[],"houseRules":"","eligibility":"","images":["/images/demo-living.jpg"],"video":"","published":false,"sortOrder":2},
+    {"id":"apartment-03","slug":"future-property-03","name":"Upcoming apartment 03","subtitle":"In preparation","location":"Mumbai","description":"Internal placeholder; do not publish before owner approval.","rateLabel":"","rateNote":"","stayOptions":"","occupancyLabel":"","amenities":[],"houseRules":"","eligibility":"","images":["/images/demo-living.jpg"],"video":"","published":false,"sortOrder":3}
+  ]
+}
