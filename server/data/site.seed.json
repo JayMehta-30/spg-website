@@ -21,9 +21,9 @@
     {
       "id":"apartment-01","slug":"kandivali-west-apartment","name":"The Kandivali Residence","subtitle":"A welcoming private apartment in Mumbai","location":"Kandivali West, Mumbai","description":"DEMO CONTENT: A calm, furnished base for your time in Mumbai. Final property description and exact amenities will be added after the owner confirms them.",
       "rateLabel":"Rates shared on enquiry","rateNote":"Sample wording. Replace with your confirmed rate or leave as enquiry-based pricing.",
-      "stayOptions":"Stay duration subject to discussion","occupancyLabel":"For eligible couples; occupancy subject to confirmation","amenities":["Furnishings: to be confirmed","Kitchen facilities: to be confirmed","Wi-Fi: to be confirmed","Parking: to be confirmed"],
-      "houseRules":"Final house rules will be shared and confirmed by the owner before any stay is agreed.",
-      "eligibility":"Accommodation is currently offered for couples only and is not available for single-person rentals. All requests are subject to suitability, owner review and applicable policies.",
+      "stayOptions":"Flexible durations subject to discussion","occupancyLabel":"Tailored for eligible couples; occupancy subject to confirmation","amenities":["Furnishings: to be confirmed","Kitchen facilities: to be confirmed","High-speed Wi-Fi: to be confirmed","Dedicated parking: to be confirmed"],
+      "houseRules":"House rules and guidelines will be shared and confirmed by the host prior to agreeing on a stay.",
+      "eligibility":"Accommodation is currently offered for eligible couples and is not available for single-occupancy rentals. All requests are subject to suitability, owner review, and house policies.",
       "images":["/images/demo-living.jpg","/images/demo-bedroom.jpg","/images/demo-kitchen.jpg","/images/demo-balcony.jpg"],
       "video":"/videos/tour.webm",
       "published":true,"sortOrder":1
